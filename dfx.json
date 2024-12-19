@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "cafe_pos_web3_backend": {
+      "main": "src/cafe_pos_web3_backend/main.mo",
+      "type": "motoko"
+    },
+    "cafe_pos_web3_frontend": {
+      "dependencies": [
+        "cafe_pos_web3_backend"
+      ],
+      "source": [
+        "src/cafe_pos_web3_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "cafe_pos_web3_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
